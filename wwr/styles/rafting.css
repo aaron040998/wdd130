@@ -77,11 +77,14 @@ header nav a:hover {
 
 .hero article {
   position: absolute;
-  bottom: 20px;
+  bottom: 42.24%;
   left: 0;
+  right: 0;
   background-color: rgba(233, 196, 106, 0.8);
   padding: 1rem;
-  width: 100%;
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .hero article h3 {
