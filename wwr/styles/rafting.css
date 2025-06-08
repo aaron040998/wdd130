@@ -289,29 +289,104 @@ p, li, figcaption {
 /*  Headquarters */
 .headquarters-container {
   padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.headquarters-title-wrapper {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.headquarters-title {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  font-size: 2rem;
 }
 .headquarters {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
-  align-items: start;
+  justify-content: center;
+  align-items: flex-start;
 }
-.headquarters .info ul {
+
+/* Info Card */
+.hq-info-card {
+  background-color: #fff;
+  border: 1px solid #d7dde4;
+  border-radius: 8px;
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.hq-info-title {
+  font-family: var(--heading-font);
+  margin-bottom: 1rem;
+  color: var(--accent1-color);
+  font-size: 1.25rem;
+}
+
+.hq-contact-list {
   list-style: none;
-  margin: 1rem 0;
+  margin: 0;
   padding: 0;
 }
-.social-list-inline {
+
+.hq-contact-list li {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-family: var(--body-font);
+  color: var(--accent1-color);
 }
-.headquarters .map iframe {
-  display: block;
+
+.hq-icon {
+  display: inline-block;
+  width: 1.5rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Links dentro de contacto */
+.hq-contact-list a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.hq-contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Redes sociales */
+.hq-social-links {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hq-social-links .icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Mapa ajustado */
+.hq-map {
+  flex: 2;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.hq-map .map-iframe {
   width: 100%;
-  height: 300px;      /* coincide con el height en el iframe, ajústalo si cambias */
+  height: 300px;
   border: none;
   border-radius: 8px;
 }
+
 
 /* ─────────────────────────────────── */
 /*  Our Team */
@@ -322,9 +397,9 @@ p, li, figcaption {
 }
 .team-cards {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  /* gap: 1rem;
+  flex-wrap: wrap; */
 }
 .team-card {
   background-color: #fff;
@@ -383,10 +458,22 @@ p, li, figcaption {
   border-radius: 4px;
   font-family: var(--body-font);
 }
-.checkbox {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0.5rem 0;
+
+.message-form fieldset {
+  border: none;
+  margin: 1rem 0;
+  padding: 0;
 }
+.message-form legend {
+  font-family: var(--heading-font);
+  margin-bottom: 0.5rem;
+}
+.message-form input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+
+
+
+
 
