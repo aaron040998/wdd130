@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Aaron Barra">
-  <meta name="description" content="Learn about WWR Adventures’ history, mission, and rafting experiences.">
-  <title>About Us – WWR Adventures Rafting Co.</title>
+  <meta name="description" content="Get in touch with WWR Adventures Rafting Co.">
+  <title>Contact Us – WWR Adventures Rafting Co.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Lato&display=swap" rel="stylesheet">
@@ -25,16 +25,118 @@
   </header>
 
   <main>
-    
+    <!-- Hero de contacto -->
+    <section class="contact-hero">
+      <h1>Contact Us</h1>
+      <p>We love questions and feedback – and we're always happy to help!<br>
+        Here are some ways to contact us.</p>
+
+      <div class="contact-cards">
+        <div class="card">
+          <h3>Talk to Sales</h3>
+          <p>Chat with our sales team to discover how our product can work best for you.</p>
+          <p class="icon-phone">📞 01 632 960 985</p>
+        </div>
+        <div class="card">
+          <h3>Contact Customer Support</h3>
+          <p>We are waiting to help you and your team – so don't hesitate to reach out!</p>
+          <a href="#message" class="btn-cta">CONTACT SUPPORT</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Headquarters -->
+    <section class="headquarters-container">
+      <h2>Headquarters</h2>
+      <div class="headquarters">
+        <div class="info">
+          <div><strong>Company information</strong></div>
+          <ul>
+            <li>📍 177 Huntington Ave, Ste 1703</li>
+            <li>✉️ contact-us@company.com</li>
+            <li>📞 +1-617-555-0108</li>
+          </ul>
+          <ul class="social-list-inline">
+            <li><a href="#"><img class="icon" src="images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img class="icon" src="images/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img class="icon" src="images/facebook.png" alt="Facebook"></a></li>
+          </ul>
+        </div>
+        <div class="map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.1234567890123!2d-71.06031768454321!3d42.35543317918645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a6b81c1234%3A0xabcdef0123456789!2s177%20Huntington%20Ave%2C%20Boston%2C%20MA%2002115!5e0!3m2!1ses!2sus!4v1623456789012!5m2!1ses!2sus"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+      </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="team-container">
+      <h2>Our Team</h2>
+      <div class="team-cards">
+        <div class="team-card">
+          <img src="images/person1.jpg" alt="Team member">
+          <h4>Persona</h4>
+          <p>+43 1 213000</p>
+        </div>
+        <div class="team-card">
+          <img src="images/person2.jpg" alt="Team member">
+          <h4>Persona</h4>
+          <p>+49 30 901820</p>
+        </div>
+        <div class="team-card">
+          <img src="images/person3.jpg" alt="Team member">
+          <h4>Persona</h4>
+          <p>+41-22-767-6111</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Send Us a Message -->
+    <section id="message" class="message-container">
+      <h2>Send Us a Message</h2>
+      <div class="message-flex">
+        <div class="message-image">
+          <img src="images/conts.jpeg" alt="Contact illustration">
+        </div>
+        <form class="message-form">
+          <p>Send us a message and we'll respond within 24 hours.</p>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+          <label for="subject">Purpose of the message</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message here…" required></textarea>
+
+          <div class="checkbox">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+          </div>
+
+          <button type="submit" class="btn-cta">SEND</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 WWR Adventures Rafting Co. | Aaron Barra</p>
     <div class="social_media">
       <ul class="social-list">
-        <li><a href="https://facebook.com"><img class="icon" src="images/facebook.png" alt="Facebook"></a></li>
-        <li><a href="https://twitter.com"><img class="icon" src="images/twitter.png" alt="Twitter"></a></li>
-        <li><a href="https://instagram.com"><img class="icon" src="images/instagram.png" alt="Instagram"></a></li>
+        <li><a href="#"><img class="icon" src="images/facebook.png" alt="Facebook"></a></li>
+        <li><a href="#"><img class="icon" src="images/twitter.png" alt="Twitter"></a></li>
+        <li><a href="#"><img class="icon" src="images/instagram.png" alt="Instagram"></a></li>
       </ul>
     </div>
   </footer>
