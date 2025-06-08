@@ -201,6 +201,13 @@ footer p {
   font-family: var(--body-font);
   color: var(--accent1-color);
 }
+.footer-wireframe-link {
+  margin-left: 0.5rem;
+  color: var(--accent1-color);
+  text-decoration: underline;
+  
+}
+
 
 .social_media {
   justify-self: end;
