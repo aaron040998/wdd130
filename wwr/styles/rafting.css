@@ -488,9 +488,6 @@ home and rafting */
   position: relative;
   height: 80vh;
   min-height: 500px;
-  background:
-    linear-gradient(rgba(4, 90, 5, 0.7), rgba(38, 70, 83, 0.8)),
-    url('images/river.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -694,7 +691,7 @@ trips *//* ───── Trips Hero Section ───── */
   min-height: 400px;
   background:
     linear-gradient(rgba(58, 92, 59, 0.453), rgba(38, 70, 83, 0.183)),
-    url('images/riverRift.jpg') center/cover no-repeat;
+    url('/images/riverRift.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
