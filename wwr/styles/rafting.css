@@ -480,7 +480,401 @@ p, li, figcaption {
 }
 
 
+/* 
+home and rafting */
+/* ─── Info Grid (Home) ─── */
+/* ───── Hero Section ───── */
+.home-hero {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  background:
+    linear-gradient(rgba(4, 90, 5, 0.7), rgba(38, 70, 83, 0.8)),
+    url('images/river.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.hero-content {
+  max-width: 800px;
+  padding: 0 1rem;
+}
+.home-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
 
+/* ──── Newsletter Signup ──── */
+.newsletter-section {
+  background-color: var(--accent2-color);
+  padding: 3rem 1rem;
+}
+.newsletter-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.newsletter-container h2 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+/* Form grid: inputs + botón */
+.newsletter-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem 1rem;
+  align-items: center;
+}
+.newsletter-form label {
+  /* mantengo accesibilidad, oculto visualmente */
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+}
+.newsletter-form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--body-font);
+  transition: border-color 0.2s ease;
+}
+.newsletter-form input:focus {
+  border-color: var(--accent1-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(38,70,83,0.2);
+}
+.newsletter-form .btn-cta {
+  padding: 0.75rem 1.5rem;
+  white-space: nowrap;
+}
 
+/* ─── Info Grid Section ─── */
+.info-grid {
+  margin-top: 2rem;
+}
+.info-grid .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.info-grid .grid-item {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.info-grid .grid-item img {
+  display: block;
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+.info-grid .grid-item h3,
+.info-grid .grid-item p {
+  padding: 0.75rem 1rem;
+}
+/* CTA dentro de info-grid */
+.info-grid .cta-block {
+  text-align: center;
+  margin: 2rem 0;
+}
+.info-grid .cta-block .btn-cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent1-color);
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.info-grid .cta-block .btn-cta:hover {
+  background-color: var(--primary-color);
+}
 
+/* ───── Grid Text + Image ───── */
+.grid-section {
+  background-color: #fff;
+  padding: 3rem 1rem;
+}
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+.grid-text h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.grid-text p {
+  line-height: 1.5;
+}
+.grid-image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
+/* ─── Offerings Cards Section ─── */
+.offerings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 1.5rem;
+  margin: 2rem 1rem;
+}
+.offering-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.offering-card:hover {
+  transform: translateY(-5px);
+}
+.icon-circle {
+  width: 70px; height: 70px;
+  margin: 0 auto 1rem;
+  background: var(--accent2-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+/* ─── Call to Action Section ─── */
+.cta-section {
+  background:
+    linear-gradient(rgba(4,90,5,0.9), rgba(4,90,5,0.8)),
+    url('images/rafting5.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  overflow: hidden;
+}
+.cta-section h2 {
+  font-family: var(--heading-font);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.cta-section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* ───── Responsive ───── */
+@media (max-width: 768px) {
+  .home-hero h1 { font-size: 2.2rem; }
+  .grid-container,
+  .info-grid .grid-container,
+  .offerings {
+    grid-template-columns: 1fr;
+  }
+  .newsletter-form { grid-template-columns: 1fr; }
+  .newsletter-form .btn-cta { width: 100%; }
+}
+
+/* 
+___________________
+trips *//* ───── Trips Hero Section ───── */
+.trips-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background:
+    linear-gradient(rgba(58, 92, 59, 0.453), rgba(38, 70, 83, 0.183)),
+    url('/images/riverRift.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.trips-hero .hero-content {
+  max-width: 800px;
+  padding: 0 1rem;
+}
+.trips-hero h1 {
+  font-family: var(--heading-font);
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.trips-hero p {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.9);
+}
+
+/* ─── Trips Call-to-Action ─── */
+.trips-cta {
+  background-color: var(--accent1-color);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  overflow: hidden;
+}
+.trips-cta .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.trips-cta h2 {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.trips-cta p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.trips-cta .btn-cta {
+  background: #fff;
+  color: var(--accent1-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-family: var(--body-font);
+}
+
+/* ───── Trip Details Section ───── */
+.trip-details {
+  background-color: #fff;
+  padding: 3rem 1rem;
+  overflow: hidden;
+}
+.section-title {
+  font-family: var(--heading-font);
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+}
+
+/* Trip Cards Grid */
+.trip-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+.trip-img img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Trip Info */
+.trip-info h3 {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.trip-info p {
+  line-height: 1.5;
+}
+
+/* Features List */
+.trip-features {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+.trip-features li {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.trip-features li::before {
+  content: "✓";
+  position: absolute;
+  left: -1.25rem;
+  color: var(--accent2-color);
+  font-weight: bold;
+}
+
+/* Meta Info */
+.trip-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+.trip-meta p {
+  flex: 1;
+  margin: 0.5rem 0;
+  text-align: center;
+  font-family: var(--body-font);
+}
+.trip-meta strong {
+  display: block;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+}
+
+/* ───── All Trips Table ───── */
+.trip-table {
+  max-width: 1000px;
+  margin: 3rem auto;
+  overflow-x: auto;
+}
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.trip-table th,
+.trip-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.trip-table th {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-family: var(--heading-font);
+}
+.trip-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.trip-table tr:hover {
+  background-color: #f0f7ff;
+}
+
+/* ───── Responsive Adjustments ───── */
+@media (max-width: 900px) {
+  .trip-card {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .trips-hero h1 {
+    font-size: 2.2rem;
+  }
+  .trip-meta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
