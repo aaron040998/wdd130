@@ -580,7 +580,7 @@ home and rafting */
 .info-grid .grid-item img {
   display: block;
   width: 100%;
-  max-height: 250px;
+  /* max-height: 250px; */
   object-fit: cover;
 }
 .info-grid .grid-item h3,
@@ -601,7 +601,9 @@ home and rafting */
   transition: background-color 0.3s ease;
 }
 .info-grid .cta-block .btn-cta:hover {
-  background-color: var(--primary-color);
+  background-color: var(--accent2-color );
+  color: var(--accent1-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.423);
 }
 
 /* ───── Grid Text + Image ───── */
@@ -682,17 +684,6 @@ home and rafting */
   margin: 0 auto 1.5rem;
 }
 
-/* ───── Responsive ───── */
-@media (max-width: 768px) {
-  .home-hero h1 { font-size: 2.2rem; }
-  .grid-container,
-  .info-grid .grid-container,
-  .offerings {
-    grid-template-columns: 1fr;
-  }
-  .newsletter-form { grid-template-columns: 1fr; }
-  .newsletter-form .btn-cta { width: 100%; }
-}
 
 /* 
 ___________________
@@ -703,7 +694,7 @@ trips *//* ───── Trips Hero Section ───── */
   min-height: 400px;
   background:
     linear-gradient(rgba(58, 92, 59, 0.453), rgba(38, 70, 83, 0.183)),
-    url('/images/riverRift.jpg') center/cover no-repeat;
+    url('images/riverRift.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -861,20 +852,4 @@ trips *//* ───── Trips Hero Section ───── */
 }
 .trip-table tr:hover {
   background-color: #f0f7ff;
-}
-
-/* ───── Responsive Adjustments ───── */
-@media (max-width: 900px) {
-  .trip-card {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 768px) {
-  .trips-hero h1 {
-    font-size: 2.2rem;
-  }
-  .trip-meta {
-    flex-direction: column;
-    gap: 1rem;
-  }
 }
